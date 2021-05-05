@@ -1,0 +1,5 @@
+desde Gitbash para subir a Github
+
+git remote add origin https://github.com/albeirock/demo.git
+git branch -M main
+git push -u origin main
