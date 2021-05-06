@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+/* diseño responsivo relax*/
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
+
+h1 {
+
+    font-style: 50vw ;
+    
+}
+
+body {
+
+    
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+
+.box_sesion {
+
+
+padding-top: 150px;
+padding-bottom: 280px;
+border: 1px solid rgb(25, 0, 255);
+border-radius: 20px;
+position: relative;
+top: 150px;
+
+
+
+
+}
+
+/*
+position: relative;
+top: 180px;
+left: 200px;
+height: 500px;
+width: 1500px;
+justify-content: center;
+*/

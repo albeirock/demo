@@ -1,5 +1,5 @@
 desde Gitbash para subir a Github
 
-git remote add origin https://github.com/albeirock/demo.git
-git branch -M main
-git push -u origin main
+git remote add origin https://github.com/albeirock/demo.git  //crear en Github
+git branch -M main  // ojo con la rama a la que se envía    
+git push -u origin main // ojo con la rama a la que se envía
