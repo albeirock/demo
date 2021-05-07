@@ -12,16 +12,25 @@
 </head>
 <body>
 
-<div class="box_sesion">
+
+<div class="container-fluid">
+    <img src="images/banner.jpg">
+</div>
+
+<div class="box_sesion1">
     <br>
     <br> 
       
-    <h1>Simulacro prueba SABER 11</h1>
+    <h1>Simulacro prueba SABER 11°</h1>
     <br>
     <br> 
-    <a href="login.php"><button type="button" class="btn btn-primary btn-lg">INICIAR SESION</button></a>
+    <a href="login.php"><button type="button" class="btn btn-primary btn-lg">INGRESAR</button></a>
     
 
+</div>
+
+<div class="containerbanner">
+    <img src="images/banner2.jpg">
 </div>
 
 
