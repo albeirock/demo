@@ -31,7 +31,7 @@ require 'database.php';
 <div class="box_sesion">
 
 <div class="container">
-  <form action="registro.php"  onsubmit="return ocultar()"  method="POST" >
+  <form name= "contacto" action="registro.php"  onsubmit="return ocultar()"  method="POST" >
   <div class="row">
     <div class="col-25">
       <label for="fname">NOMBRES Y APELLIDOS</label>
@@ -53,8 +53,8 @@ require 'database.php';
   </div>
   
 
-  <div class="row">
-    <input type="submit" value="Iniciar Sesión">
+  <div class="row" id="caja21">
+    <input type="submit" value="Iniciar Sesión" >
   </div>
   </form>
 </div>
@@ -63,6 +63,38 @@ require 'database.php';
 <div class="containerbanner">
     <img src="images/banner.jpg" widt >
 </div>
+
+
+<script>
+
+function ocultar() {
+
+    var obtener = document.getElementById("caja21");
+    var mensaje = "<center>Hay campos vacios";
+    var mensaje2 = "<center>Procesando sus datos...espere";
+   
+    var x = document.forms["contacto"]["nombre"].value;
+    var y = document.forms["contacto"]["tarjeta"].value;
+    if (x == "" || y == "") {
+        alert("HAY CAMPOS VACIOS")
+    ;
+    return false;
+ } else{
+
+    obtener.innerHTML = mensaje2;
+
+ } 
+
+
+
+}
+</script>
+
+
+
+
+
+
 
 </body>
 </html>
