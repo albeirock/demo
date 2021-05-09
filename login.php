@@ -1,3 +1,13 @@
+
+
+<?php
+
+require 'database.php';
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +22,7 @@
 <body>
 
 
+
 <div class="container-fluid">
     <img src="images/banner.jpg" widt >
 </div>
@@ -20,13 +31,13 @@
 <div class="box_sesion">
 
 <div class="container">
-  <form action="/action_page.php">
+  <form action="registro.php"  onsubmit="return ocultar()"  method="POST" >
   <div class="row">
     <div class="col-25">
-      <label for="fname">NOMBRE COMPLETO</label>
+      <label for="fname">NOMBRES Y APELLIDOS</label>
     </div>
     <div class="col-75">
-      <input type="text" id="APELLIDO" name="APELLIDO" autocomplete="off" >
+      <input type="text" style="text-transform:uppercase;" id="nombre" name="nombre" autocomplete="off" >
     </div>
   </div>
   
@@ -37,7 +48,7 @@
       <label for="lname">DOCUMENTO DE IDENTIDAD</label>
     </div>
     <div class="col-75">
-      <input type="text" id="DOCUMENTO" name="DOCUMENTO" autocomplete="off" >
+      <input type="text" style="text-transform:uppercase;" id="tarjeta" name="tarjeta" autocomplete="off" >
     </div>
   </div>
   
@@ -50,7 +61,7 @@
 </div>
 
 <div class="containerbanner">
-    <img src="images/banner2.jpg" widt >
+    <img src="images/banner.jpg" widt >
 </div>
 
 </body>
