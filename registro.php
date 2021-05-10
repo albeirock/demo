@@ -1,8 +1,8 @@
 <?php
 
-
 verificar_voto();
-
+$nombre = $_POST['nombre'];
+$tarjeta = $_POST['tarjeta'];
 
 function verificar_registro(){
 
@@ -31,13 +31,9 @@ $dibi= mysqli_select_db($enlace, $db);
                if ( $rowcountT>0 ) {
                    
                     mysqli_query($enlace,"INSERT INTO votantes(nombre,tarjeta) VALUES ('$nombre','$tarjeta')");
+                    sesionx();
 
-                    echo "<script> 
-        
-                    alert('BIENVENIDO A LA PRUEBA'); 
-                    window.location='preguntas.php';                   
-                             
-                    </script>";
+                                 
                     
                
                 }
@@ -131,6 +127,56 @@ function verificar_voto(){
           }        
 
 }
+
+
+function sesionx(){
+
+  $nombre = $_POST['nombre'];
+  $tarjeta = $_POST['tarjeta'];
+  $host = "localhost";
+  $user = "albeirock";
+  $password = "777";
+  $db = "votacionx";
+  $enlace = mysqli_connect($host,$user,$password);
+  $dibi= mysqli_select_db($enlace, $db);
+
+  session_start();
+  $_SESSION['nombre'] = $nombre;
+  $_SESSION['tarjeta'] = $tarjeta;
+
+  $query = "SELECT * FROM lista WHERE tarjeta='$tarjeta'";
+  $result = $enlace->query($query);
+  if (!$result) die($connection->error);
+
+  elseif ($result->num_rows)
+{
+$row = $result->fetch_array(MYSQLI_NUM);
+$result->close();
+  
+echo "Hi $row[0], ID: '$row[1]'";
+
+/*echo "<script> 
+        
+                alert('bienvenido a la prueba');
+                 
+                             
+      </script>";*/
+
+      
+      echo "<script> 
+        
+      window.location='preguntas.php'; 
+      
+                   
+      </script>";
+
+
+
+
+}
+
+}
+
 
 
 
