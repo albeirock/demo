@@ -108,15 +108,9 @@ function verificar_voto(){
         
                      
         </script>";
-                  
-                   
-                  
-                     
-        
-               }
 
-            
-                        
+        sesionx();        
+               }                      
                     
                else {
                  
@@ -141,7 +135,7 @@ function sesionx(){
   $dibi= mysqli_select_db($enlace, $db);
 
   session_start();
-  $_SESSION['nombre'] = $nombre;
+  //$_SESSION['nombre'] = $nombre;
   $_SESSION['tarjeta'] = $tarjeta;
 
   $query = "SELECT * FROM lista WHERE tarjeta='$tarjeta'";

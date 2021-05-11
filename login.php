@@ -37,7 +37,7 @@ require 'database.php';
       <label for="fname">NOMBRES Y APELLIDOS</label>
     </div>
     <div class="col-75">
-      <input type="text" style="text-transform:uppercase;" id="nombre" name="nombre" autocomplete="off" >
+      <input type="text" style="text-transform:uppercase;"  id="nombre" name="nombre" autocomplete="off" >
     </div>
   </div>
   
@@ -48,13 +48,13 @@ require 'database.php';
       <label for="lname">DOCUMENTO DE IDENTIDAD</label>
     </div>
     <div class="col-75">
-      <input type="text" style="text-transform:uppercase;" id="tarjeta" name="tarjeta" autocomplete="off" >
+      <input type="text" style="text-transform:uppercase;" pattern="[A-Za-z0-9]{1,30}" title="Escriba su documento sin puntos" id="tarjeta" name="tarjeta" autocomplete="off" >
     </div>
   </div>
   
 
   <div class="row" id="caja21">
-    <input type="submit" value="Iniciar Sesión" >
+    <input type="submit" value="Iniciar Sesión"   >
   </div>
   </form>
 </div>
