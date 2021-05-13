@@ -48,7 +48,16 @@ $personas=$doc->getElementsByTagName("personas");
           </thead>
          <tbody>
 
+
+
+
+
+         
+
          <?php
+
+
+
             foreach($personas as $persona)
          {
             $id = $persona->getElementsByTagName("id_persona");
@@ -63,6 +72,9 @@ $personas=$doc->getElementsByTagName("personas");
 
             $dire = $persona->getElementsByTagName("direccion");
             $direccion=$dire->item(0)->nodeValue ;
+
+            $dire = $persona->getElementsByTagName("imagen");
+            $imagen=$dire->item(0)->nodeValue ;
             
 
          ?>
@@ -71,6 +83,9 @@ $personas=$doc->getElementsByTagName("personas");
                 <td><?php echo $nom ?></td>   
                 <td><?php echo $correo ?></td>  
                 <td><?php echo $direccion ?></td> 
+                <td><img src="<?php echo $imagen ?>" ?></td>
+
+
             </tr>
           
           <?php

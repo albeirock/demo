@@ -18,7 +18,9 @@
    </direccion>
 
     
-   <image_path>pregunta1.jpg</image_path>
+   <imagen>
+   pregunta1.jpg
+   </imagen>
 
 
 
