@@ -1,0 +1,116 @@
+<usuarios>
+
+<personas>
+   <id_persona>
+	  1
+   </id_persona>
+	
+   <nom>
+	Albeiro Caucali
+   </nom>
+	
+   <correo>
+	albeirock@hotmail.com
+   </correo>
+
+   <direccion>
+ 	CASTILLA	
+   </direccion>
+
+    
+   <image_path>pregunta1.jpg</image_path>
+
+
+
+</personas>
+
+
+
+<personas>
+   <id_persona>
+	  2
+   </id_persona>
+	
+   <nom>
+	Tatiana Graciano
+   </nom>
+	
+   <correo>
+	tatygh@hotmail.com
+   </correo>
+
+   <direccion>
+ 	CASTILLA	
+   </direccion>
+
+
+  <imagen>
+ 	
+    pregunta1.jpg
+
+   </imagen>	
+
+</personas>
+
+
+
+
+<personas>
+   <id_persona>
+	  3
+   </id_persona>
+	
+   <nom>
+	Lila GH
+   </nom>
+	
+   <correo>
+	lilagh@hotmail.com
+   </correo>
+
+   <direccion>
+ 	CASTILLA	
+   </direccion>
+
+
+  <imagen>
+ 	
+    pregunta1.jpg
+
+   </imagen>	
+
+
+</personas>
+
+
+<personas>
+   <id_persona>
+	  4
+   </id_persona>
+	
+   <nom>
+	Camelia
+   </nom>
+	
+   <correo>
+	kamelia@hotmail.com
+   </correo>
+
+   <direccion>
+ 	VIZCAYA	
+   </direccion>
+
+
+
+  <imagen>
+ 	
+    pregunta1.jpg
+
+   </imagen>	
+
+
+
+</personas>
+
+
+</usuarios>
