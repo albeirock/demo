@@ -1,118 +1,95 @@
 <usuarios>
 
-<personas>
-   <id_persona>
+<preguntas>
+   <id_pregunta>
 	  1
-   </id_persona>
+   </id_pregunta>
 	
-   <nom>
-	Albeiro Caucali
-   </nom>
+   <grafico>
+	questions/pregunta2.jpg
+   </grafico>
 	
-   <correo>
-	albeirock@hotmail.com
-   </correo>
+      
+   <pregunta>
+   questions/pregunta1.jpg
+   </pregunta>
 
-   <direccion>
- 	CASTILLA	
-   </direccion>
 
-    
-   <imagen>
-   pregunta1.jpg
+    <imagen>
+   questions/hoja.jpg
    </imagen>
+   
+
+</preguntas>
 
 
-
-</personas>
-
-
-
-<personas>
-   <id_persona>
+<preguntas>
+   <id_pregunta>
 	  2
-   </id_persona>
+   </id_pregunta>
 	
-   <nom>
-	Tatiana Graciano
-   </nom>
+   <grafico>
+	questions/pregunta2.jpg
+   </grafico>
 	
-   <correo>
-	tatygh@hotmail.com
-   </correo>
-
-   <direccion>
- 	CASTILLA	
-   </direccion>
+      
+   <pregunta>
+   questions/pregunta1.jpg
+   </pregunta>
 
 
-  <imagen>
- 	
-    pregunta1.jpg
+    <imagen>
+   questions/hoja.jpg
+   </imagen>
+   
 
-   </imagen>	
+</preguntas>
 
-</personas>
-
-
-
-
-<personas>
-   <id_persona>
+<preguntas>
+   <id_pregunta>
 	  3
-   </id_persona>
+   </id_pregunta>
 	
-   <nom>
-	Lila GH
-   </nom>
+   <grafico>
+	questions/pregunta2.jpg
+   </grafico>
 	
-   <correo>
-	lilagh@hotmail.com
-   </correo>
-
-   <direccion>
- 	CASTILLA	
-   </direccion>
+      
+   <pregunta>
+   questions/pregunta1.jpg
+   </pregunta>
 
 
-  <imagen>
- 	
-    pregunta1.jpg
+    <imagen>
+   questions/hoja.jpg
+   </imagen>
+   
 
-   </imagen>	
+</preguntas>
 
-
-</personas>
-
-
-<personas>
-   <id_persona>
+<preguntas>
+   <id_pregunta>
 	  4
-   </id_persona>
+   </id_pregunta>
 	
-   <nom>
-	Camelia
-   </nom>
+   <grafico>
+	questions/pregunta2.jpg
+   </grafico>
 	
-   <correo>
-	kamelia@hotmail.com
-   </correo>
-
-   <direccion>
- 	VIZCAYA	
-   </direccion>
+      
+   <pregunta>
+   questions/pregunta1.jpg
+   </pregunta>
 
 
+    <imagen>
+   questions/hoja.jpg
+   </imagen>
+   
 
-  <imagen>
- 	
-    pregunta1.jpg
-
-   </imagen>	
+</preguntas>
 
 
-
-</personas>
 
 
 </usuarios>

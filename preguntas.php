@@ -2,7 +2,7 @@
 
 $doc =new DOMDocument();
 $doc->load("questions/1.xml");
-$personas=$doc->getElementsByTagName("personas");
+$preguntas=$doc->getElementsByTagName("preguntas");
 
 
 
@@ -23,9 +23,6 @@ $personas=$doc->getElementsByTagName("personas");
 <body>
    
    
-<div class="card">
-<h1>PRUEBA SABER 2021</h1>
-</div>
 
  
 
@@ -34,66 +31,58 @@ $personas=$doc->getElementsByTagName("personas");
 
   <div class="column">
     <div class="card">
-        <h3></h3>
-  
-        <center> <table>
-          <thead>
-           <tr>
-              <th>ID</th>
-              <th>Nombre</th>
-              <th>Email</th>
-              <th>Dirección</th>
-              <th>Imagen</th>
-           </tr>
-          </thead>
-         <tbody>
 
 
-
-
-
-         
+        <div class="card">
+PRUEBA SABER 2021
+</div>  
+             
 
          <?php
 
 
 
-            foreach($personas as $persona)
+            foreach($preguntas as $pregunta)
          {
-            $id = $persona->getElementsByTagName("id_persona");
-            $id_persona=$id->item(0)->nodeValue ;
+            $id = $pregunta->getElementsByTagName("id_pregunta");
+            $id_pregunta=$id->item(0)->nodeValue ;
 
-            $name = $persona->getElementsByTagName("nom");
-            $nom=$name->item(0)->nodeValue ;
+            $grafi = $pregunta->getElementsByTagName("grafico");
+            $grafico=$grafi->item(0)->nodeValue ;
 
-            $mail = $persona->getElementsByTagName("correo");
-            $correo=$mail->item(0)->nodeValue ;
+            $pregu = $pregunta->getElementsByTagName("pregunta");
+            $pregunt=$pregu->item(0)->nodeValue ;
 
 
-            $dire = $persona->getElementsByTagName("direccion");
-            $direccion=$dire->item(0)->nodeValue ;
+            $imag = $pregunta->getElementsByTagName("imagen");
+            $imagen=$imag->item(0)->nodeValue ;
 
-            $dire = $persona->getElementsByTagName("imagen");
-            $imagen=$dire->item(0)->nodeValue ;
+           
             
 
          ?>
-            <tr>
-                <td><?php echo $id_persona ?></td>
-                <td><?php echo $nom ?></td>   
-                <td><?php echo $correo ?></td>  
-                <td><?php echo $direccion ?></td> 
-                <td><img src="<?php echo $imagen ?>" ?></td>
 
+<div class="card">
+<?php echo "Pregunta N°", $id_pregunta ?>
+</div>
 
-            </tr>
+<div class="card">
+<img src="<?php echo $grafico ?>" ?>
+</div>
+
+<div class="card">
+<img src="<?php echo $pregunt ?>" ?>
+</div>
+<div class="card">
+<img src="<?php echo $imagen ?>" ?>
+</div>
+         
           
           <?php
             }
          ?>
 
-         </tbody>
-        </table></center> 
+         
 
     </div>
   </div>
